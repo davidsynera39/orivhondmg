@@ -1,0 +1,28 @@
+{
+  "name": "orivon-desktop",
+  "version": "1.0.0",
+  "description": "Orivon desktop app",
+  "author": "Orivon",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac dmg --x64 --arm64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "~38.8.6",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.orivon.app",
+    "productName": "Orivon",
+    "files": ["main.js", "splash.html", "img/**", "package.json"],
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "build/icon.png",
+      "identity": null,
+      "minimumSystemVersion": "11.0",
+      "target": [{ "target": "dmg", "arch": ["x64", "arm64"] }]
+    },
+    "dmg": { "title": "Install Orivon" }
+  }
+}

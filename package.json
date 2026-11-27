@@ -1,0 +1,31 @@
+{
+  "name": "orivon-static-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "node server/db/migrate.js",
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "docx": "^9.7.2",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mammoth": "^1.12.2",
+    "multer": "^2.3.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.15.2",
+    "postgres": "^3.4.5",
+    "qrcode": "^1.5.4",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10"
+  }
+}

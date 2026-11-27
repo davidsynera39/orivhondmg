@@ -1,0 +1,1 @@
+ALTER TABLE "payments" ADD COLUMN "plan_key" text DEFAULT 'pro' NOT NULL;
