@@ -1,0 +1,72 @@
+{
+  "name": "orivon-static-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "node server/db/migrate.js",
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "desktop": "electron .",
+    "dist:mac": "electron-builder --mac dmg --x64 --arm64 --publish never"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "docx": "^9.7.2",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mammoth": "^1.12.2",
+    "multer": "^2.3.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.15.2",
+    "postgres": "^3.4.5",
+    "qrcode": "^1.5.4",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "electron": "~38.8.6",
+    "electron-builder": "^26.18.0"
+  },
+  "main": "electron/main.js",
+  "description": "Orivon — career and guidance platform (desktop)",
+  "author": "Orivon",
+  "build": {
+    "appId": "com.orivon.app",
+    "productName": "Orivon",
+    "files": [
+      "electron/**",
+      "server/**",
+      "public/**",
+      "drizzle/**",
+      ".env.example",
+      "package.json",
+      "!**/.env",
+      "!storage/**"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "hardenedRuntime": false,
+      "identity": null,
+      "minimumSystemVersion": "11.0"
+    },
+    "dmg": {
+      "title": "Install Orivon"
+    },
+    "asar": true
+  }
+}

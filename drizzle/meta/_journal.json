@@ -1,0 +1,69 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1788510581606,
+      "tag": "0000_hard_major_mapleleaf",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790767369646,
+      "tag": "0001_amazing_terror",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790849147914,
+      "tag": "0002_lovely_gauntlet",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791130061112,
+      "tag": "0003_solid_jubilee",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793177272665,
+      "tag": "0004_melted_slyde",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793908174646,
+      "tag": "0005_brown_blue_marvel",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794128388201,
+      "tag": "0006_young_chamber",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1795074545158,
+      "tag": "0007_abnormal_tyger_tiger",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1795456839200,
+      "tag": "0008_sloppy_johnny_blaze",
+      "breakpoints": true
+    }
+  ]
+}
